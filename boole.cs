@@ -18,11 +18,11 @@ namespace ConsoleApp9
             double porcentajePoblacionMayor = 26;
 
             double poblacionMayor = poblacionTotal * (porcentajePoblacionMayor / 100);
-            double abstencion = poblacionMayor - a + b + blanco + nulo;
+            double abstencion = poblacionMayor - (a + b + blanco + nulo);
 
             bool A = (nulo < 0.3 * (a + b));
             bool B = (blanco < a + b);
-            bool C = (a + b + blanco + nulo > abstencion);
+            bool C = ((a + b + blanco + nulo) > abstencion);
 
             Console.WriteLine("votos a : " + a);
             Console.WriteLine("votos b : " + b);
