@@ -33,14 +33,14 @@ namespace ConsoleApp1
                 }
                 if (edad < min)
                 {
-                    max = edad;
-                    nombreMax = nombre;
+                    min = edad;
+                    nombreMin = nombre;
                 }
 
                 if (edad > max)
                 {
-                    min = edad;
-                    nombreMin = nombre;
+                    max = edad;
+                    nombreMax = nombre;
                 }
 
                 total += edad;
@@ -49,5 +49,9 @@ namespace ConsoleApp1
 
             double promedio = total / n;
             Console.WriteLine("promedio: " + promedio);
-            Console.WriteLine("maximo: " + max + nombreMax);
-            Console.WriteLine("minimo: " + min + nombreMin);
+            Console.WriteLine("maximo: " + max + " " + nombreMax);
+            Console.WriteLine("minimo: " + min + " " + nombreMin);
+        }
+
+    }
+}
