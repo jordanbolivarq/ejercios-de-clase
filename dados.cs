@@ -70,6 +70,8 @@ namespace ConsoleApp4
 
                     if (dado1 == dado2)
                         contador3++;
+                    else
+                        contador = 0;
 
                     Console.WriteLine("Pares : " + contador3);
 
@@ -100,3 +102,4 @@ namespace ConsoleApp4
         }
     }
 }
+
